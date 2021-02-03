@@ -1,5 +1,6 @@
 @import "~bootstrap/scss/bootstrap.scss";
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 /* 
 
     You can write your own styles here...
@@ -11,3 +12,182 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right top, rgba(85, 197, 122, 0.041), rgba(40, 180, 133, 0.527)), url(./pexels-negative-space-34153.jpg);
+}
+nav{
+    background-image: linear-gradient(to right top, rgba(85, 197, 122, 0.041), rgba(40, 180, 133, 0.527)), url(./pexels-negative-space-34153.jpg);
+}
+.navbar-toggler, .navbar-toggler-icon{
+    color: black;
+}
+.navbar-brand h1{
+    letter-spacing: 4px;
+    font-family: 'Fredoka One', cursive;
+    color: white;
+}
+.nav-item a{
+    color: white;
+    font-size: 1.2em;
+}
+.nav-item a:hover{
+    // animation: hoverLink 1s;
+    // font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: solid 2px rgb(0, 247, 164);
+    border-right: solid 2px rgb(0, 247, 164);
+}
+.nav-item {
+    padding-right: 10%;
+}
+.nav-item:first-child{
+    margin-left: 3%;
+}
+.list{
+    list-style: none;
+    margin-right: 2%;
+    margin-top: 1%;
+}
+.list li, .list a{
+    padding: 3%;
+    color: white;
+    margin-left: 10%;
+    font-size: 1.2em;
+}
+.list li:hover, .list a:hover{
+    animation: hoverLink 2s;
+}
+.active{
+    border-radius: 5%;
+    border-bottom: solid 2px rgb(0, 247, 164);
+    color: rgb(0, 247, 164);
+}
+
+@keyframes hoverLink{
+    0%{
+        opacity: 0;
+        transform: rotate(180deg);
+    }
+    50%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+//FIRST VIEW STYLES
+.first-view-info{
+    height: 100vh;
+    color: black;
+    background-color: white;
+    
+        .presentation{
+            display: flex;
+            
+            flex-direction: row;
+            width: 80%;
+            padding-top: 15%;
+            margin: 0 auto;
+            padding-left: 10%;
+            
+            .info{
+                text-align: justify;
+
+                strong{
+                    font-family: 'Dancing Script', cursive;
+                    color: rgb(0, 247, 164);
+                }
+            }
+            .image{
+                width: 100%;
+
+                #guy-coding{
+                    width: 90%;
+                }
+            }
+        
+        }
+    }
+
+   
+    
+
+
+
+
+
+
+//ABOUT STYLES
+.main{
+    color: white;
+    height: 100vh;
+
+    .info-about{
+
+        .img{
+             padding-top: 20%;
+            img{
+               
+                width: 100%;
+            }
+        }
+
+        .collapse-btns{
+            padding-top: 7.3%;
+            height: 500px;
+
+            .accordion-button{
+                color: rgb(0, 255, 179);
+            }
+            .accordion-body ul{
+                text-align: center;
+                list-style: none;
+                font-size: 1em;
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+//SKILLS STYLES
+#skills{
+    height: 100vh;
+    background-color: white;
+    color: black;
+    padding-top: 7%;
+
+    h1{ 
+        letter-spacing: 2px;
+        font-family: 'Fredoka One', cursive;
+        border-radius: 25px;
+        padding: 2%;
+        color: black;
+        width: 40%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .skills-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+        margin: 10% auto;
+        text-align: center;
+        font-size: 1.5em;
+
+        .skill-icon{
+            padding: 3%;
+            border: solid 3px black;
+        }
+    }
+}
