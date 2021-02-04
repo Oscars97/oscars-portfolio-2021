@@ -1,6 +1,7 @@
 @import "~bootstrap/scss/bootstrap.scss";
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
 /* 
 
     You can write your own styles here...
@@ -26,7 +27,7 @@ nav{
 }
 .navbar-brand h1{
     letter-spacing: 4px;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Amiri', serif;
     color: white;
 }
 .nav-item a{
@@ -37,7 +38,6 @@ nav{
     // animation: hoverLink 1s;
     // font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-bottom: solid 2px rgb(0, 247, 164);
-    border-right: solid 2px rgb(0, 247, 164);
 }
 .nav-item {
     padding-right: 10%;
@@ -87,7 +87,6 @@ nav{
     
         .presentation{
             display: flex;
-            
             flex-direction: row;
             width: 80%;
             padding-top: 15%;
@@ -96,11 +95,21 @@ nav{
             
             .info{
                 text-align: justify;
+            
+                .btn-outline-dark{
+                    font-size: 1.5em;
+                }
+            
+                h1{
+                    
 
                 strong{
-                    font-family: 'Dancing Script', cursive;
+                    margin-top: 10%;
+                    font-family: 'Amiri', serif;
                     color: rgb(0, 247, 164);
+                    border-bottom: solid 3px rgb(0, 247, 164);
                 }
+            }
             }
             .image{
                 width: 100%;
@@ -141,7 +150,8 @@ nav{
             height: 500px;
 
             .accordion-button{
-                color: rgb(0, 255, 179);
+                color: black;
+                font-size: 0.5em;
             }
             .accordion-body ul{
                 text-align: center;
@@ -187,7 +197,27 @@ nav{
 
         .skill-icon{
             padding: 3%;
-            border: solid 3px black;
+            box-shadow: 5px 10px 8px #888888;
+            color: white;
+
+
+            &:first-child{
+                background-color: yellow;
+            }
+            &:nth-child(3){
+                background-color: #61dbfb;
+            }
+            &:nth-child(5){
+                background-color: #8213dd;
+            }
+            &:nth-child(7){
+                background-image: linear-gradient(to right top, rgb(242, 247, 0), rgb(0, 47, 255)), url(./pexels-negative-space-34153.jpg);
+            }
+            &:last-child{
+                background-color: #fbfafc;
+                color: black;
+                
+            }
         }
     }
 }

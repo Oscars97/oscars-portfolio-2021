@@ -5,12 +5,12 @@ const FirstView = () => {
 		<div className="container-fluid first-view-info">
 			<div className="presentation">
 				<div className="info">
-					<h3>Welcome to my world</h3>
+					<h3>Welcome to my life</h3>
 					<br />
 					<h1>
 						Hi, my name is <strong>Óscar Sánchez</strong>
 					</h1>
-					<hr />
+					<br />
 					<h2>Based in Pérez Zeledón, &#127464;&#127479;</h2>
 					<button
 						type="button"
