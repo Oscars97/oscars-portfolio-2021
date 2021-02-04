@@ -58,7 +58,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
         favicon: '4geeks.ico',
-        template: 'template.html'
+        template: 'index.html'
     }),
     new PrettierPlugin({
       parser: "babylon",
